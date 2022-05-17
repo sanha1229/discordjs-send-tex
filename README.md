@@ -1,7 +1,7 @@
 # discordjs-send-tex
 Send TeX in discord.js!
 
-## Use
+## Use Example
 ```js
 const sendtex = require(PATH);
 
