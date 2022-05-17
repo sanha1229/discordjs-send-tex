@@ -1,6 +1,18 @@
 # discordjs-send-tex
 Send TeX in discord.js!
 
+## Use
+```js
+const sendtex = require(PATH);
+
+// Assume that the default setting of discord.js is finished.
+client.on('messageCreate', message => {
+    if (message.content === 'test') {
+        sendtex('\\sum_{n=1}^{\\infty }{1\\over n^{2}}={\\pi^{2}\\over 6}', message);
+    }
+});
+```
+
 ## Open Source License Info
 ### tex-to-svg
 by CreatifCreateur, MIT License
