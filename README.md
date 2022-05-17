@@ -12,6 +12,7 @@ client.on('messageCreate', message => {
     }
 });
 ```
+![test](/assets/test.jpg){: width="100" height="50"}
 
 ## Open Source License Info
 ### tex-to-svg
