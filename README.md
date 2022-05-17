@@ -12,7 +12,7 @@ client.on('messageCreate', message => {
     }
 });
 ```
-<img src="/assets/test.jpg" width="100" height="50">
+<img src="/assets/test.jpg" width="250">
 
 ## Open Source License Info
 ### tex-to-svg
