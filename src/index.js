@@ -4,10 +4,10 @@ const tex2svg = require('tex-to-svg');
 const svg2png = require('svg-to-png').convert;
 
 async function saveTeXasPNG (tex) {
-    let svg = await tex2svg(tex);
+    let svg = await tex2svg(tex, { em: 1.5 });
     let ts = await new Date().getTime();
     await fs.writeFileSync(`${__dirname}/${ts}.svg`, svg);
-    await svg2png(`${__dirname}/${ts}.svg`, __dirname, { defaultHeight: 15 });
+    await svg2png(`${__dirname}/${ts}.svg`, __dirname);
     await fs.unlinkSync(`${__dirname}/${ts}.svg`);
     return `${__dirname}/${ts}.png`;
 }
